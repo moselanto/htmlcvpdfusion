@@ -1,0 +1,232 @@
+/* Global Styles */
+body {
+  margin: 0;
+  background: #f5f5f5;
+  font-family: 'Gill Sans MT', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #565656;
+  font-size: 14px;
+  line-height: 1.44em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 1024px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 0.06);
+  overflow: hidden;
+}
+
+/* Sidebar Styles */
+.cv-sidebar {
+  width: 320px;
+  background: #f7f8f9;
+  padding: 28px 40px;
+  border-right: 1.6px solid #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-bottom: 50px;
+  background: #d3d3d3;
+}
+
+.cv-sidebar section {
+  width: 100%;
+  margin-bottom: 38px;
+}
+
+.cv-sidebar h2 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #bebebe;
+  padding-bottom: 6px;
+  font-family: 'Gill Sans MT', sans-serif;
+}
+
+.cv-sidebar p {
+  font-weight: 600;
+  margin: 6px 0;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.4em;
+  font-family: 'Gill Sans MT', 'Trebuchet MS', Arial, sans-serif;
+}
+
+.cv-sidebar p strong {
+  font-weight: 700;
+  display: inline-block;
+  width: 100px;
+  letter-spacing: 0.04em;
+  color: #666;
+}
+
+.cv-sidebar p em {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  color: #979797;
+  display: block;
+  margin-top: 2px;
+}
+
+/* Main Content Styles */
+.cv-main {
+  flex-grow: 1;
+  padding: 36px 48px;
+}
+
+.cv-header h1 {
+  font-family: 'Gill Sans MT', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  color: #303030;
+  letter-spacing: 1.3px;
+  margin: 0 0 8px 0;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #3b7bca;
+}
+
+.cv-header h4 {
+  font-weight: 600;
+  font-size: 13px;
+  color: #73829b;
+  margin: 0 0 32px 0;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+/* Summary Section */
+.cv-summary p {
+  margin: 0 0 15px 0;
+}
+
+.cv-summary ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin-top: 6px;
+}
+
+.cv-summary ul li {
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  margin-bottom: 8px;
+}
+
+/* Work Experience and Education Headings */
+.cv-experience h2,
+.cv-education h2 {
+  font-weight: 800;
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: #5b87c0;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  border-bottom: 1.2px solid #bfc7d3;
+  padding-bottom: 6px;
+}
+
+/* Job Section */
+.job {
+  margin-bottom: 30px;
+}
+
+.job h3 {
+  font-weight: 700;
+  font-size: 14.5px;
+  margin: 0 0 4px;
+  display: flex;
+  justify-content: space-between;
+  color: #3a4d7a;
+  letter-spacing: 1.05px;
+}
+
+.job h3 span {
+  font-weight: 400;
+  font-size: 11.2px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #838eae;
+}
+
+.job p {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 4px 0 10px;
+  color: #444444;
+}
+
+.job ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.job ul li {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #505050;
+  letter-spacing: 0.3px;
+}
+
+/* Education Section */
+.cv-education div {
+  margin-bottom: 18px;
+}
+
+.cv-education strong {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.cv-education span {
+  font-weight: 600;
+  font-size: 12px;
+  color: #979797;
+  display: block;
+  margin-top: 6px;
+  letter-spacing: 0.8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cv-container {
+    flex-direction: column;
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .cv-sidebar {
+    width: 100%;
+    padding: 24px 20px;
+    border-right: none;
+    border-bottom: 1px solid #e1e1e1;
+    align-items: flex-start;
+  }
+
+  .cv-img {
+    margin-bottom: 24px;
+    margin-left: 0;
+  }
+
+  .cv-main {
+    padding: 20px 20px 30px 20px;
+  }
+}
