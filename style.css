@@ -285,5 +285,29 @@ body {
     }
     .project-link a, .contact-grid a {
         color: var(--text-color) !important;
+
+        /* --- UPDATED PHOTO HOLDER & ACTUAL IMAGE STYLING --- */
+.photo-placeholder {
+    width: 115px;
+    height: 135px;
+    background-color: var(--light-bg);
+    border: 1px solid var(--border-color); /* Matches your section lines for a premium, clean look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden; /* Clips the photo corners to match the border radius */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Soft depth so it sits cleanly on the page */
+    margin-left: 20px; /* Gives the text room to breathe on smaller or printing screens */
+    flex-shrink: 0; /* Prevents the photo box from squishing if the text gets long */
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Automatically clips and fills the frame without stretching your face */
+    object-position: center top; /* Focuses the frame perfectly on your headshot */
+    display: block;
+}
     }
 }
